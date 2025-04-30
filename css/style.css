@@ -1,0 +1,191 @@
+        :root {
+            --cor-primaria: #2c3e50;
+            --cor-secundaria: #3498db;
+            --cor-destaque: #e74c3c;
+            --cor-texto: #333;
+            --cor-fundo: #f5f6fa;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', sans-serif;
+        }
+
+        body {
+            background-color: var(--cor-fundo);
+            color: var(--cor-texto);
+            line-height: 1.6;
+        }
+
+        .cabecalho {
+            background: var(--cor-primaria);
+            color: white;
+            padding: 2rem;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .menu {
+            background: var(--cor-secundaria);
+            padding: 1rem;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .menu-lista {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+        }
+
+        .menu-item a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        .menu-item a:hover {
+            color: var(--cor-destaque);
+        }
+
+        .secao {
+            padding: 4rem 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .titulo-secao {
+            color: var(--cor-primaria);
+            margin-bottom: 2rem;
+            text-align: center;
+            font-size: 2.5rem;
+        }
+
+        .cartao {
+            background: white;
+            border-radius: 10px;
+            padding: 2rem;
+            margin-bottom: 2rem;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+        }
+
+        .cartao:hover {
+            transform: translateY(-5px);
+        }
+
+        .grid-habilidades {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+        }
+
+        .barra-progresso {
+            width: 100%;
+            height: 20px;
+            background: #eee;
+            border-radius: 10px;
+            margin: 10px 0;
+            overflow: hidden;
+        }
+
+        .progresso {
+            height: 100%;
+            background: var(--cor-secundaria);
+            width: 0;
+            transition: width 1s;
+        }
+
+        .contato-form {
+            display: grid;
+            gap: 1rem;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .campo {
+            padding: 0.8rem;
+            border: 2px solid #ddd;
+            border-radius: 5px;
+            font-size: 1rem;
+        }
+
+        .botao {
+            background: var(--cor-secundaria);
+            color: white;
+            padding: 1rem 2rem;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1rem;
+            transition: background 0.3s;
+        }
+
+        .botao:hover {
+            background: var(--cor-destaque);
+        }
+
+        .redes-sociais {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .rede-social {
+            font-size: 2rem;
+            color: var(--cor-secundaria);
+            transition: color 0.3s;
+        }
+
+        .rede-social:hover {
+            color: var(--cor-destaque);
+        }
+
+        @media (max-width: 768px) {
+            .menu-lista {
+                flex-direction: column;
+                align-items: center;
+                gap: 1rem;
+            }
+
+            .secao {
+                padding: 2rem 1rem;
+            }
+
+            .titulo-secao {
+                font-size: 2rem;
+            }
+        }
+
+        .tema-switch {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            z-index: 1000;
+        }
+
+        .dark-mode {
+            --cor-fundo: #1a1a1a;
+            --cor-texto: #ffffff;
+            --cor-primaria: #1e272e;
+            --cor-secundaria: #0097e6;
+        }
+
+        .animacao-entrada {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.5s, transform 0.5s;
+        }
+
+        .animacao-entrada.visivel {
+            opacity: 1;
+            transform: translateY(0);
+        }
+  
