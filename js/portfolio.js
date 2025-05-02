@@ -20,27 +20,17 @@ function verificarElementosVisiveis() {
     });
 }
 
-// Alternar tema claro/escuro
+// Alternar tema 
 function alternarTema() {
     document.body.classList.toggle('dark-mode');
     const botao = document.querySelector('.tema-switch i');
+    
+    // Alterna o icone entre lua e sol
     botao.classList.toggle('fa-moon');
     botao.classList.toggle('fa-sun');
 }
 
-// Enviar mensagem do formulário
-function enviarMensagem(event) {
-    event.preventDefault();
-    const form = event.target;
-    const formData = new FormData(form);
-    
-    // Simulação de envio
-    alert('Mensagem enviada com sucesso!');
-    form.reset();
-    return false;
-}
-
-// Menu suave
+ // Menu suave
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
         e.preventDefault();

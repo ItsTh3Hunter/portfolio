@@ -1,9 +1,11 @@
         :root {
             --cor-primaria: #2c3e50;
             --cor-secundaria: #3498db;
-            --cor-destaque: #e74c3c;
+            --cor-destaque: #201e1e;
             --cor-texto: #333;
             --cor-fundo: #f5f6fa;
+            --cor-texto-titulo: #f5f6fa;
+            --cor-cartao: #ffffff;
         }
 
         * {
@@ -21,7 +23,7 @@
 
         .cabecalho {
             background: var(--cor-primaria);
-            color: white;
+            color: var(--cor-texto-titulo);
             padding: 2rem;
             text-align: center;
             position: relative;
@@ -44,7 +46,7 @@
         }
 
         .menu-item a {
-            color: white;
+            color: var(--cor-texto-titulo);
             text-decoration: none;
             font-weight: bold;
             transition: color 0.3s;
@@ -61,15 +63,15 @@
         }
 
         .titulo-secao {
-            color: var(--cor-primaria);
+            color: var(--cor-texto);
             margin-bottom: 2rem;
             text-align: center;
             font-size: 2.5rem;
         }
 
         .cartao {
-            background: white;
-            border-radius: 10px;
+            background: var(--cor-cartao);
+            border-radius: 1px;
             padding: 2rem;
             margin-bottom: 2rem;
             box-shadow: 0 4px 6px rgba(0,0,0,0.1);
@@ -118,7 +120,7 @@
 
         .botao {
             background: var(--cor-secundaria);
-            color: white;
+            color: var(--cor-fundo);
             padding: 1rem 2rem;
             border: none;
             border-radius: 5px;
@@ -129,6 +131,22 @@
 
         .botao:hover {
             background: var(--cor-destaque);
+        }
+
+        .tema-switch {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            z-index: 1000;
+        }
+
+        .dark-mode {
+            --cor-fundo: #1a1a1a;
+            --cor-texto: #ffffff;
+            --cor-primaria: #1e272e;
+            --cor-secundaria: #007bb5;
+            --cor-destaque: #a6d15b;
+            --cor-cartao: #2b2b2b ;
         }
 
         .redes-sociais {
@@ -162,20 +180,6 @@
             .titulo-secao {
                 font-size: 2rem;
             }
-        }
-
-        .tema-switch {
-            position: fixed;
-            bottom: 20px;
-            right: 20px;
-            z-index: 1000;
-        }
-
-        .dark-mode {
-            --cor-fundo: #1a1a1a;
-            --cor-texto: #ffffff;
-            --cor-primaria: #1e272e;
-            --cor-secundaria: #0097e6;
         }
 
         .animacao-entrada {
