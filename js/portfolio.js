@@ -7,19 +7,6 @@ function animarBarrasProgresso() {
     });
 }
 
-// Animação de entrada dos elementos
-function verificarElementosVisiveis() {
-    const elementos = document.querySelectorAll('.animacao-entrada');
-    elementos.forEach(elemento => {
-        const posicaoTopo = elemento.getBoundingClientRect().top;
-        const alturaTela = window.innerHeight;
-        
-        if (posicaoTopo < alturaTela - 100) {
-            elemento.classList.add('visivel');
-        }
-    });
-}
-
 // Alternar tema 
 function alternarTema() {
     document.body.classList.toggle('dark-mode');

@@ -181,15 +181,3 @@
                 font-size: 2rem;
             }
         }
-
-        .animacao-entrada {
-            opacity: 0;
-            transform: translateY(20px);
-            transition: opacity 0.5s, transform 0.5s;
-        }
-
-        .animacao-entrada.visivel {
-            opacity: 1;
-            transform: translateY(0);
-        }
-  
