@@ -1,130 +1,146 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-BR">
-<head>
-
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <!--Links-->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Luiz Henrique - Portfólio</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="//use.fontawesome.com/releases/v6.7.2/css/all.css">
-    <script src="js/portfolio.js" ></script>   
-
-</head>
-<body>
-
-    
-
-    <header class="cabecalho">
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      href="//use.fontawesome.com/releases/v6.7.2/css/all.css"
+    />
+    <!--Defer carrega o JD mas espera carregar a página toda para executa-lo-->
+    <script src="js/portfolio.js" defer></script>
+  </head>
+  <body>
+    <div class="folha">
+      <header class="cabecalho">
         <h1>Luiz Henrique Pereira de Carvalho</h1>
         <p>Full Stack Developer</p>
-    </header>
+      </header>
 
-    <nav class="menu">
+      <!--Menus da página-->
+      <nav class="menu">
         <ul class="menu-lista">
-            <li class="menu-item"><a href="#sobre">Sobre</a></li>
-            <li class="menu-item"><a href="#experiencia">Experiência</a></li>
-            <li class="menu-item"><a href="#educacao">Educação</a></li>
-            <li class="menu-item"><a href="#habilidades">Habilidades</a></li>
-            <li class="menu-item"><a href="#contato">Contato</a></li>
+          <li class="menu-item"><a href="#sobre">Sobre</a></li>
+          <li class="menu-item"><a href="#experiencia">Experiência</a></li>
+          <li class="menu-item"><a href="#educacao">Educação</a></li>
+          <li class="menu-item"><a href="#habilidades">Habilidades</a></li>
+          <li class="menu-item"><a href="#contato">Contato</a></li>
         </ul>
-    </nav>
-
-    <section id="sobre" class="secao">
+      </nav>
+      <!--Sobre mim-->
+      <section id="sobre" class="secao">
         <h2 class="titulo-secao">Sobre Mim</h2>
         <div class="cartao">
-            <p>Sou formado como Técnico em Informática pela 
-                ETEC Philadelpho Gouvêa Netto, atualmente, 
-                curso Informática para Negócios e estou em busca de evoluir minhas
-                habilidades como desenvolvedor Full Stack. 
-                Se procura um profissional comunicativo, proativo e 
-                comprometido com a evolução contínua, estou pronto para 
-                agregar valor à sua equipe!</p>
+          <p>
+            Sou formado como Técnico em Informática pela ETEC Philadelpho Gouvêa
+            Netto, atualmente, curso Informática para Negócios e estou em busca
+            de evoluir minhas habilidades como desenvolvedor Full Stack. Se
+            procura um profissional comunicativo, proativo e comprometido com a
+            evolução contínua, estou pronto para agregar valor à sua equipe!
+          </p>
         </div>
-    </section>
-
-    <section id="experiencia" class="secao">
+      </section>
+      <!--Experiência profissional-->
+      <section id="experiencia" class="secao">
         <h2 class="titulo-secao">Experiência Profissional</h2>
         <div class="cartao">
-            <h3>Suporte de T.I - Arcontemp</h3>
-            <p>junho/2021 - Presente</p>
-            <ul>
-                <li>Auxiliar de governança de T.I</li>
-                <li>Suporte de hardware e software ao usuário presencial e remotamente.</li>
-                <li>Responsável pelo patrimônio de T.I</li>
-                <li>Manutenção em PCs, servidores, impressoras e nobreaks</li>
-            </ul>
+          <h3>Suporte de T.I - Arcontemp</h3>
+          <p>junho/2021 - Presente</p>
+          <ul>
+            <li>Auxiliar de governança de T.I</li>
+            <li>
+              Suporte de hardware e software ao usuário presencial e
+              remotamente.
+            </li>
+            <li>Responsável pelo patrimônio de T.I</li>
+            <li>Manutenção em PCs, servidores, impressoras e nobreaks</li>
+          </ul>
         </div>
-    </section>
+      </section>
 
-    <section id="educacao" class="secao">
+      <!--Formação-->
+      <section id="educacao" class="secao">
         <h2 class="titulo-secao">Formação</h2>
         <div class="grid-habilidades">
-            <div class="cartao">
-                <h3>Fatec Rio Preto</h3>
-                <p>Informática para Negócios</p>
-                <p>2025 - conclusão em 06/28</p>
-            </div>
-            <div class="cartao">
-                <h3>ETEC PHILADELPHO GOUVÊA NETO</h3>
-                <p>Ensino Médio e Técnico em informática</p>
-                <p>2018 - 2020</p>
-            </div>
+          <div class="cartao">
+            <h3>Fatec Rio Preto</h3>
+            <p>Informática para Negócios</p>
+            <p>2025 - conclusão em 06/28</p>
+          </div>
+          <div class="cartao">
+            <h3>ETEC PHILADELPHO GOUVÊA NETO</h3>
+            <p>Ensino Médio e Técnico em informática</p>
+            <p>2018 - 2020</p>
+          </div>
         </div>
-    </section>
+      </section>
 
-    <section id="habilidades" class="secao">
+      <section id="habilidades" class="secao">
         <h2 class="titulo-secao">Habilidades</h2>
         <div class="grid-habilidades">
-            <div class="cartao">
-                <h3>Hard Skills</h3>
-                <ul>
-                    <li>HTML5 & CSS3</li>
-                    <li>Node.js & React.js</li>
-                    <li>SQL Server & MySQL</li>
-                    <li>C# & Java </li>
-                    <li>Noções de UX/UI</li>
-                    <li>Responsive Design & Media Queries</li>
-                    <li>Versionamento com Git e GitHub</li>
-                </ul>
-            </div>
-            <div class="cartao">
-                <h3>Human Skills</h3>
-                <ul>
-                    <li>Pensamento Crítico</li>
-                    <li>Resiliente</li>
-                    <li>Foco</li>
-                    <li>Prático</li>
-                    <li>Rápido aprendizado</li>
-                    <li>Adaptável</li>
-                    <li>Boa comunicação</li>
-                </ul>
-            </div>
+          <div class="cartao">
+            <!--Hard Skills: oque você sabe fazer-->
+            <h3>Hard Skills</h3>
+            <ul>
+              <li>HTML5 & CSS3</li>
+              <li>Node.js & React.js</li>
+              <li>SQL Server & MySQL</li>
+              <li>C# & Java</li>
+              <li>Noções de UX/UI</li>
+              <li>Responsive Design & Media Queries</li>
+              <li>Versionamento com Git e GitHub</li>
+            </ul>
+          </div>
+          <!--Human ou Soft skills-->
+          <div class="cartao">
+            <h3>Human Skills</h3>
+            <ul>
+              <li>Pensamento Crítico</li>
+              <li>Resiliente</li>
+              <li>Foco</li>
+              <li>Prático</li>
+              <li>Rápido aprendizado</li>
+              <li>Adaptável</li>
+              <li>Boa comunicação</li>
+            </ul>
+          </div>
         </div>
-    </section>
+      </section>
 
-    <section id="contato" class="secao">
+      <!--Contatos & rede social-->
+      <section id="contato" class="secao">
         <h2 class="titulo-secao">Contato</h2>
         <div class="">
-            <div class="redes-sociais">
-                <a href="mailto:coding.carvalho@gmail.com" class="rede-social">
-                    <i class="fas fa-envelope"></i>
-                </a>
-                <a href="tel:+5517988358851" class="rede-social">
-                    <i class="fas fa-phone"></i>
-                </a>
-                <a href="https://www.linkedin.com/in/luiz-henrique-pereira-de-carvalho-808387203/" target="_blank" class="rede-social">
-                    <i class="fab fa-linkedin"></i>
-                </a>
-                <a href="https://github.com/ItsTh3Hunter" target="_blank" class="rede-social">
-                    <i class="fab fa-github"></i>
-                </a>
-            </div>
+          <div class="redes-sociais">
+            <a href="mailto:coding.carvalho@gmail.com" class="rede-social">
+              <i class="fas fa-envelope"></i>
+            </a>
+            <a href="tel:+5517988358851" class="rede-social">
+              <i class="fas fa-phone"></i>
+            </a>
+            <a
+              href="https://www.linkedin.com/in/luiz-henrique-pereira-de-carvalho-808387203/"
+              target="_blank"
+              class="rede-social"
+            >
+              <i class="fab fa-linkedin"></i>
+            </a>
+            <a
+              href="https://github.com/ItsTh3Hunter"
+              target="_blank"
+              class="rede-social"
+            >
+              <i class="fab fa-github"></i>
+            </a>
+          </div>
         </div>
-    </section>
-
+      </section>
+    </div>
     <button onclick="alternarTema()" class="botao tema-switch">
-        <i class="fa-sharp fa-solid fa-moon"></i>
+      <i class="fa-sharp fa-solid fa-moon"></i>
     </button>
-    
-</body>
+  </body>
 </html>

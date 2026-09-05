@@ -1,184 +1,225 @@
-        :root {
-            --cor-primaria: #2c3e50;
-            --cor-secundaria: #3498db;
-            --cor-destaque: #201e1e;
-            --cor-texto: #333;
-            --cor-fundo: #f5f6fa;
-            --cor-texto-titulo: #f5f6fa;
-            --cor-cartao: #ffffff;
-        }
+:root {
+  --cor-primaria: #2c3e50;
+  --cor-secundaria: #3498db;
+  --cor-destaque: #201e1e;
+  --cor-texto: #333;
+  --cor-fundo: #f5f6fa;
+  --cor-texto-titulo: #f5f6fa;
+  --cor-cartao: #ffffff;
+}
+/*Aparencia de folha de papel no projeto*/
+.folha {
+  width: 90%;
+  max-width: 1000px;
+  margin: 40px auto;
+  background-color: var(--cor-cartao);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+  min-height: 100vh;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", sans-serif;
+}
 
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: 'Segoe UI', sans-serif;
-        }
+body {
+  background-color: var(--cor-fundo);
+  color: var(--cor-texto);
+  line-height: 1.6;
+}
 
-        body {
-            background-color: var(--cor-fundo);
-            color: var(--cor-texto);
-            line-height: 1.6;
-        }
+.cabecalho {
+  background: var(--cor-primaria);
+  color: var(--cor-texto-titulo);
+  padding: 2rem;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
 
-        .cabecalho {
-            background: var(--cor-primaria);
-            color: var(--cor-texto-titulo);
-            padding: 2rem;
-            text-align: center;
-            position: relative;
-            overflow: hidden;
-        }
+.menu {
+  background: var(--cor-secundaria);
+  padding: 1rem;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
 
-        .menu {
-            background: var(--cor-secundaria);
-            padding: 1rem;
-            position: sticky;
-            top: 0;
-            z-index: 100;
-        }
+.menu-lista {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
 
-        .menu-lista {
-            list-style: none;
-            display: flex;
-            justify-content: center;
-            gap: 2rem;
-        }
+.menu-item a {
+  color: var(--cor-texto-titulo);
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s;
+}
 
-        .menu-item a {
-            color: var(--cor-texto-titulo);
-            text-decoration: none;
-            font-weight: bold;
-            transition: color 0.3s;
-        }
+.menu-item a:hover {
+  color: var(--cor-destaque);
+}
 
-        .menu-item a:hover {
-            color: var(--cor-destaque);
-        }
+.secao {
+  padding: 4rem 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
 
-        .secao {
-            padding: 4rem 2rem;
-            max-width: 1200px;
-            margin: 0 auto;
-        }
+.titulo-secao {
+  color: var(--cor-texto);
+  margin-bottom: 2rem;
+  text-align: center;
+  font-size: 2.5rem;
+}
 
-        .titulo-secao {
-            color: var(--cor-texto);
-            margin-bottom: 2rem;
-            text-align: center;
-            font-size: 2.5rem;
-        }
+.cartao {
+  background: var(--cor-cartao);
+  border-radius: 1px;
+  padding: 2rem;
+  margin-bottom: 2rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+}
 
-        .cartao {
-            background: var(--cor-cartao);
-            border-radius: 1px;
-            padding: 2rem;
-            margin-bottom: 2rem;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-            transition: transform 0.3s;
-        }
+.cartao:hover {
+  transform: translateY(-5px);
+}
 
-        .cartao:hover {
-            transform: translateY(-5px);
-        }
+.grid-habilidades {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+}
 
-        .grid-habilidades {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 2rem;
-        }
+.contato-form {
+  display: grid;
+  gap: 1rem;
+  max-width: 600px;
+  margin: 0 auto;
+}
 
-        .barra-progresso {
-            width: 100%;
-            height: 20px;
-            background: #eee;
-            border-radius: 10px;
-            margin: 10px 0;
-            overflow: hidden;
-        }
+.campo {
+  padding: 0.8rem;
+  border: 2px solid #ddd;
+  border-radius: 5px;
+  font-size: 1rem;
+}
 
-        .progresso {
-            height: 100%;
-            background: var(--cor-secundaria);
-            width: 0;
-            transition: width 1s;
-        }
+.botao {
+  background: var(--cor-secundaria);
+  color: var(--cor-fundo);
+  padding: 1rem 2rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background 0.3s;
+}
 
-        .contato-form {
-            display: grid;
-            gap: 1rem;
-            max-width: 600px;
-            margin: 0 auto;
-        }
+.botao:hover {
+  background: var(--cor-destaque);
+}
 
-        .campo {
-            padding: 0.8rem;
-            border: 2px solid #ddd;
-            border-radius: 5px;
-            font-size: 1rem;
-        }
+.tema-switch {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1000;
+}
 
-        .botao {
-            background: var(--cor-secundaria);
-            color: var(--cor-fundo);
-            padding: 1rem 2rem;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-            font-size: 1rem;
-            transition: background 0.3s;
-        }
+.dark-mode {
+  --cor-fundo: #1a1a1a;
+  --cor-texto: #ffffff;
+  --cor-primaria: #1e272e;
+  --cor-secundaria: #007bb5;
+  --cor-destaque: #a6d15b;
+  --cor-cartao: #2b2b2b;
+}
 
-        .botao:hover {
-            background: var(--cor-destaque);
-        }
+.redes-sociais {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 2rem;
+}
 
-        .tema-switch {
-            position: fixed;
-            bottom: 20px;
-            right: 20px;
-            z-index: 1000;
-        }
+.rede-social {
+  font-size: 2rem;
+  color: var(--cor-secundaria);
+  transition: color 0.3s;
+}
 
-        .dark-mode {
-            --cor-fundo: #1a1a1a;
-            --cor-texto: #ffffff;
-            --cor-primaria: #1e272e;
-            --cor-secundaria: #007bb5;
-            --cor-destaque: #a6d15b;
-            --cor-cartao: #2b2b2b ;
-        }
+.rede-social:hover {
+  color: var(--cor-destaque);
+}
 
-        .redes-sociais {
-            display: flex;
-            justify-content: center;
-            gap: 2rem;
-            margin-top: 2rem;
-        }
+.botao-menu {
+  display: none;
+}
+/*Media para celular + menu Hamburguer*/
+@media (max-width: 768px) {
+  /*Aspecto de folha de papel no mobile*/
+  .folha {
+    width: 100%;
+    margin: 0;
+    box-shadow: none;
+  }
+  /*Botão de troca de temas mobile*/
+  .tema-switch {
+    bottom: 15px;
+    right: 15px;
+    padding: 0.6rem;
+    font-size: 0.9rem;
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+  }
+  .menu {
+    position: relative;
+    height: 58px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .menu-lista {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+    width: 100%;
+    padding: 0.7rem 1rem 1rem;
+    background-color: var(--cor-secundaria);
+  }
 
-        .rede-social {
-            font-size: 2rem;
-            color: var(--cor-secundaria);
-            transition: color 0.3s;
-        }
+  .menu-lista.menu-aberto {
+    display: flex;
+  }
 
-        .rede-social:hover {
-            color: var(--cor-destaque);
-        }
+  .botao-menu {
+    display: block;
+    position: absolute;
+    right: 1rem;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    color: var(--cor-texto-titulo);
+    font-size: 1.8rem;
+    cursor: pointer;
+    z-index: 2;
+  }
+  .secao {
+    padding: 2rem 1rem;
+  }
 
-        @media (max-width: 768px) {
-            .menu-lista {
-                flex-direction: column;
-                align-items: center;
-                gap: 1rem;
-            }
-
-            .secao {
-                padding: 2rem 1rem;
-            }
-
-            .titulo-secao {
-                font-size: 2rem;
-            }
-        }
-
+  .titulo-secao {
+    font-size: 2rem;
+  }
+}
